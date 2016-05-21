@@ -1,0 +1,3 @@
+[submodule "HEAD"]
+	path = HEAD
+	url = https://github.com/joshbuchea/HEAD.git
