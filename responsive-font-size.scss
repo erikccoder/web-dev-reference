@@ -1,0 +1,30 @@
+$sizes: 20, 50, 80;
+$vw: 750;
+
+body{
+
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+:root{
+    font-size: 1vw;
+}
+
+@media (min-width: 800px)
+{
+  :root
+  {
+    $result:  ($vw / 100 );
+    font-size: #{$result}px;
+  }
+}
+
+@each $size in $sizes 
+{
+  .f-#{$size} {
+    $result:  ($size / ($vw / 100 ));
+    font-size: 1em;
+    font-size: #{$result}em;
+  }
+}
